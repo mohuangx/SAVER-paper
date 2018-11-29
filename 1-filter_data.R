@@ -12,7 +12,7 @@ melanoma <- sweep(melanoma.raw, 2, apply(melanoma.raw, 2,
 is.wholenumber <- function(x, tol = .Machine$double.eps^0.5) {
   abs(x - round(x)) < tol
 }
-sum(!is.wholenumber(df))
+sum(!is.wholenumber(melanoma))
 
 rm(melanoma.raw)
 gc()
